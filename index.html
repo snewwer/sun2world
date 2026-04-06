@@ -7,7 +7,64 @@
   <link rel="stylesheet" href="css/main.css" />
 </head>
 <body>
+  <style>
+    
+    .popup-achtergrond {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.5);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+    }
 
+    .popup {
+      background: white;
+      padding: 24px;
+      max-width: 500px;
+      width: 90%;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+
+    .popup h2 {
+      margin-top: 0;
+    }
+
+    .popup button {
+      margin-top: 16px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .verborgen {
+      display: none;
+    }
+
+    .inhoud {
+      padding: 40px;
+    }
+  </style>
+
+  <div id="popupAchtergrond" class="popup-achtergrond">
+    <div class="popup">
+      <h2>Let op</h2>
+      <p>
+        Deze website is gemaakt voor een schoolproject en is niet echt.
+      </p>
+      <button onclick="sluitPopup()">Sluiten</button>
+    </div>
+  </div>
+  <script>
+    function sluitPopup() {
+      document.getElementById("popupAchtergrond").classList.add("verborgen");
+    }
+  </script>
   <header class="navbar">
     <div class="logo">Sun<span>2</span>World</div>
     <nav>
