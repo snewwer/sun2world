@@ -1,7 +1,26 @@
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
 }
 
 body {
