@@ -1,0 +1,273 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #f4fbff, #ffffff);
+  color: #16324f;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background: white;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: #f57c00;
+}
+
+.logo span {
+  color: #ffb300;
+}
+
+nav a {
+  margin-left: 25px;
+  text-decoration: none;
+  color: #0d63c9;
+  font-weight: 600;
+  position: relative;
+  transition: 0.3s;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 3px;
+  left: 0;
+  bottom: -5px;
+  background: #ffb300;
+  transition: 0.3s;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 60px;
+  min-height: 80vh;
+}
+
+.hero-text {
+  max-width: 500px;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: #0d63c9;
+}
+
+.hero-text p {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 14px 28px;
+  background: #f57c00;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+}
+
+.hero-image {
+  position: relative;
+  width: 350px;
+  height: 350px;
+}
+
+.circle {
+  position: absolute;
+  border-radius: 50%;
+}
+
+.sun {
+  width: 180px;
+  height: 180px;
+  background: #ffb300;
+  top: 30px;
+  left: 20px;
+}
+
+.world {
+  width: 220px;
+  height: 220px;
+  background: #0d63c9;
+  top: 80px;
+  left: 100px;
+  border: 10px solid #8bcf2f;
+}
+
+.plane {
+  position: absolute;
+  top: 70px;
+  right: 10px;
+  font-size: 42px;
+  color: #0d63c9;
+}
+
+.tiers {
+  padding: 80px 60px;
+  text-align: center;
+}
+
+.tiers h2 {
+  font-size: 40px;
+  color: #0d63c9;
+  margin-bottom: 10px;
+}
+
+.tiers-subtitle {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.tier-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.tier-card {
+  background: white;
+  width: 320px;
+  padding: 35px 30px;
+  border-radius: 22px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: 0.2s;
+}
+
+.tier-card {
+  transition: all 0.3s ease;
+}
+
+.badge {
+  position: absolute;
+  top: 20px;
+  right: -40px;
+  background: #ffb300;
+  color: white;
+  padding: 8px 40px;
+  font-size: 14px;
+  font-weight: bold;
+  transform: rotate(45deg);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.tier-card:hover {
+  transform: translateY(-12px) scale(1.03);
+  box-shadow: 0 15px 30px rgba(13, 99, 201, 0.2);
+}
+
+.tier-card h3 {
+  font-size: 28px;
+  color: #f57c00;
+  margin-bottom: 10px;
+}
+
+.tier-price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #0d63c9;
+  margin-bottom: 15px;
+}
+
+.tier-card p {
+  margin-bottom: 20px;
+}
+
+.tier-card ul {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.tier-card ul li {
+  margin-bottom: 8px;
+}
+
+.featured {
+  border: 3px solid #ffb300;
+  transform: scale(1.05);
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding: 60px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  width: 280px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.card h2 {
+  margin-bottom: 15px;
+  color: #f57c00;
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  background: #0d63c9;
+  color: white;
+  margin-top: 40px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.btn {
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #ffb300;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(245, 124, 0, 0.4);
+}
+
+.featured:hover {
+  transform: scale(1.08) translateY(-12px);
+  box-shadow: 0 20px 40px rgba(255, 179, 0, 0.4);
+}
+
+.card {
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+.plane {
+  transition: 0.3s;
+}
+
+.plane:hover {
+  transform: translateX(10px) rotate(10deg);
+}
